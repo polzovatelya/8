@@ -15,6 +15,14 @@ namespace L8
 
             public int win;
         }
+        public void Print(List<elem> lst)
+        {
+            for (int i = 0; i < lst.Count; i++)
+            {
+                Console.WriteLine(lst[i].name_k, lst[i].name_t, lst[i].win);
+            }
+
+        }
         static void Main(string[] args)
         {
             List<elem> list = new List<elem>();
