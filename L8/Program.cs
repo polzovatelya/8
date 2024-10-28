@@ -49,6 +49,12 @@ namespace L8
                 el.win = -1;
             }
         }
+        public static double Average_list(List<elem> lst)
+        {
+            double aver = lst.Average(item => item.win);
+            return aver;
+
+        }
         static void Main(string[] args)
         {
             List<elem> lst1 = new List<elem>();
