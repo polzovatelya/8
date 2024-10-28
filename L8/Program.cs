@@ -49,6 +49,27 @@ namespace L8
                 el.win = -1;
             }
         }
+        public static void Delete(List<elem> lst1, int index)
+        {
+            if (index >= 0 && index < lst1.Count)
+            {
+                lst1.RemoveAt(index);
+            }
+
+        }
+
+        public void Add(List<elem> lst1, elem el)
+        {
+            lst1.Add(el);
+        }
+        public void Edit(List<elem> lst1, int index, elem el)
+        {
+            if (index >= 0 && index < lst1.Count)
+            {
+                lst1[index] = el;
+            }
+        }
+
         static void Main(string[] args)
         {
             List<elem> lst1 = new List<elem>();
