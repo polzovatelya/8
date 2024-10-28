@@ -49,6 +49,12 @@ namespace L8
                 el.win = -1;
             }
         }
+        public static double Average_list(List<elem> lst)
+        {
+            double aver = lst.Average(item => item.win);
+            return aver;
+
+        }
         public static void Delete(List<elem> lst1, int index)
         {
             if (index >= 0 && index < lst1.Count)
